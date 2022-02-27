@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Merienda', cursive;
+    /*overflow: hidden;*/
+}
+
+
+header{
+    font-family: 'Merienda', cursive;
+    padding-bottom: 54px;
+}
+
+/*nabvar*/
+
+.navbar{
+    position: fixed;
+    background-color: rgba(25, 211, 214, .6);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 750px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 10px;
+    z-index: 999;
+}
+
+.logo{
+    padding: 5px 0;
+    margin-left: 35px;
+    position: relative;
+    width: auto;
+    color: #fff;
+}
+
+.navbar>ul {
+    list-style: none;
+    padding: 6px 0px;
+    padding-left: 15px;
+    margin: auto;
+    margin-right: 35px;
+}
+
+.navbar>ul>li{
+    display: inline-block;
+    margin: 0 15px;
+    margin-left: 0;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+ul>li>ul>li{
+    display: none;
+}
+
+/*slider*/
+
+.galeri-image{
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.slider img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all .5s ease-in;
+    opacity: 1;
+    z-index: 1;
+}
+
+.hidden{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 15px;
+    position: absolute;  
+}
+
+.hidden img{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.slider img:hover{
+    cursor: pointer;
+    opacity: 0;
+}
+
+/*title_home*/
+
+.title_home>h1{
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.860);
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0 15px 0;
+}
+
+/*brands*/
+
+.slick-track{
+    background-color: #000;
+}
+
+footer {
+    background-color: #000;
+    color: whitesmoke;
+    padding: 1em 0;
+}
+
+.paragraph p{
+    text-align: center;
+    font-size: .8em;
+}
+
+/*#onload{
+    background: #000 url(../img/loader.gif) no-repeat center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}*/
+
